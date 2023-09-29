@@ -1,7 +1,9 @@
 package app.lotto;
 
-import java.util.*;
+import lombok.Data;
 
+import java.util.*;
+@Data
 public class LottoNumberGenerator {
 
     public Set<Integer> generate6RandomNumbers() {
