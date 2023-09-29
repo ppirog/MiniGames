@@ -4,16 +4,15 @@ import lombok.Data;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 public class UserNumberReceiver {
     private final BufferedReader reader;
 
-    public List<Integer> readUserNumber() {
-        List<Integer> userNumbers = new ArrayList<>();
+    public Set<Integer> readUserNumber() {
+        Set<Integer> userNumbers = new HashSet<>();
 
         for (int i = 0; i < 6; ++i) {
             while (true) {
@@ -37,9 +36,7 @@ public class UserNumberReceiver {
                 }
             }
         }
-        userNumbers.sort(Comparator.naturalOrder());
         return  userNumbers;
-
     }
 
 }
