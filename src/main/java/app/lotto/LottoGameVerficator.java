@@ -23,11 +23,9 @@ class LottoGameVerficator {
                 resultOfGame++;
             }
         }
-        StringBuilder textResult = new StringBuilder();
-        textResult.append(printResult(resultOfGame)).append("\n");
-        textResult.append(printUserNumbers()).append("\n");
-        textResult.append(printLottoNumbers()).append("\n");
-        return textResult.toString();
+        return printResult(resultOfGame) + "\n" +
+                printUserNumbers() + "\n" +
+                printLottoNumbers() + "\n";
     }
     private String printResult(int num){
         return RESULT + num;
