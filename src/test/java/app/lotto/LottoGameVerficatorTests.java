@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class LottoGameVerficatorTests {
     @Test
     public void should_result_text_be_correct_test1(){
+        //given
         String givenNumbers =
                 """
                         0
@@ -43,19 +44,20 @@ public class LottoGameVerficatorTests {
         LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
-
+        //when
         String expectedResult = """
                 Result: 6
                 User numbers: 1 2 3 4 5 6\s
                 Lotto numbers: 1 2 3 4 5 6\s
                 """;
 
-
+        //then
         assertThat(givenResult).isEqualTo(expectedResult);
 
     }
     @Test
     public void should_result_text_be_correct_test2(){
+        //given
         String givenNumbers =
                 """
                         0
@@ -87,18 +89,20 @@ public class LottoGameVerficatorTests {
         LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
-
+        //when
         String expectedResult = """
                 Result: 0
                 User numbers: 1 3 4 6 11 22\s
                 Lotto numbers: 94 95 96 97 98 99\s
                 """;
 
-
+        //then
         assertThat(givenResult).isEqualTo(expectedResult);
+
     }
     @Test
     public void should_result_text_be_correct_test3(){
+        //given
         String givenNumbers =
                 """
                         0
@@ -130,18 +134,19 @@ public class LottoGameVerficatorTests {
         LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
-
+        //when
         String expectedResult = """
                 Result: 2
                 User numbers: 1 3 4 6 94 96\s
                 Lotto numbers: 94 95 96 97 98 99\s
                 """;
 
-
+        //then
         assertThat(givenResult).isEqualTo(expectedResult);
     }
     @Test
     public void should_result_text_be_correct_test4(){
+        //given
         String givenNumbers =
                 """
                         0
@@ -173,16 +178,18 @@ public class LottoGameVerficatorTests {
         LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
-
+        //when
         String expectedResult = """
                 Result: 3
                 User numbers: 1 3 4 94 96 99\s
                 Lotto numbers: 94 95 96 97 98 99\s
                 """;
+        //then
         assertThat(givenResult).isEqualTo(expectedResult);
     }
     @Test
     public void should_result_text_be_correct_test5(){
+        //given
         String givenNumbers =
                 """
                         0
@@ -214,12 +221,13 @@ public class LottoGameVerficatorTests {
         LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
-
+        //when
         String expectedResult = """
                 Result: 4
                 User numbers: 1 3 91 94 96 99\s
                 Lotto numbers: 91 94 95 96 97 99\s
                 """;
+        //then
         assertThat(givenResult).isEqualTo(expectedResult);
     }
 

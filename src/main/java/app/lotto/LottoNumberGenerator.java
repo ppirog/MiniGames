@@ -21,5 +21,6 @@ class LottoNumberGenerator {
             }
         }
         return randomNumbers;
+
     }
 }

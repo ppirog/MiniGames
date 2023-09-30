@@ -77,6 +77,7 @@ public class LottoNumberGeneratorTests {
             if(counter.size() != 6){
                 givenInRangeNumbers = false;
             }
+
         }
         //when
         boolean expectedInRangeNumbers = true;

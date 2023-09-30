@@ -19,5 +19,6 @@ public class LottoGameLauncher implements Game {
 
         LottoGameVerficator verficator = new LottoGameVerficator(userSet,randomSet);
         System.out.println(verficator.verifyUserResult());
+
     }
 }

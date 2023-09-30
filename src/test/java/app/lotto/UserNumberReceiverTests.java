@@ -112,6 +112,7 @@ public class UserNumberReceiverTests {
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
         Set<Integer> list = receiver.readUserNumber();
         assertThat(expectedNumbers).isEqualTo(list);
+
     }
 
     @Test

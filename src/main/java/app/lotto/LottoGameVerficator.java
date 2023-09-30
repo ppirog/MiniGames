@@ -45,5 +45,6 @@ class LottoGameVerficator {
             builder.append(num).append(" ");
         }
         return builder.toString();
+
     }
 }
