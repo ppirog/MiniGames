@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -32,7 +31,7 @@ public class LottoGameVerficatorTests {
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
         Set<Integer> userSet = receiver.readUserNumber();
 
-        Set<Integer> resultSet = new HashSet<>();
+        Set<Integer> resultSet = new TreeSet<>();
         resultSet.add(1);
         resultSet.add(2);
         resultSet.add(3);
