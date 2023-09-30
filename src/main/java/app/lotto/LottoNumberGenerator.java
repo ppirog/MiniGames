@@ -4,11 +4,11 @@ import lombok.Data;
 
 import java.util.*;
 @Data
-public class LottoNumberGenerator {
+class LottoNumberGenerator {
 
-    public Set<Integer> generate6RandomNumbers() {
-        Random random = new Random();
-        Set<Integer> randomNumbers = new HashSet<>();
+    public Set<Integer> generate6RandomNumbers(Random random) {
+
+        Set<Integer> randomNumbers = new TreeSet<>();
 
         for (int i = 0; i < 6; ++i) {
 

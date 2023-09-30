@@ -1,18 +1,18 @@
 package app.lotto;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
-@Data
-public class UserNumberReceiver {
+@AllArgsConstructor
+class UserNumberReceiver {
     private final BufferedReader reader;
 
     public Set<Integer> readUserNumber() {
-        Set<Integer> userNumbers = new HashSet<>();
+        Set<Integer> userNumbers = new TreeSet<>();
 
         for (int i = 0; i < 6; ++i) {
             while (true) {
