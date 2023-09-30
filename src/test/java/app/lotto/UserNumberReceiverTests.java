@@ -15,15 +15,14 @@ public class UserNumberReceiverTests {
     @Test
     public void has_receiver_exactly_6_numbers_test1() {
         Set<Integer> expectedNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        String givenNumbers =
-                """
-                        1
-                        2
-                        3
-                        4
-                        5
-                        6
-                        """;
+        String givenNumbers = """
+                1
+                2
+                3
+                4
+                5
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -35,16 +34,15 @@ public class UserNumberReceiverTests {
     public void has_receiver_exactly_6_numbers_test2() {
         Set<Integer> expectedNumbers = Set.of(1, 2, 3, 4, 5, 6);
 
-        String givenNumbers =
-                """
-                        -1
-                        1
-                        2
-                        3
-                        4
-                        5
-                        6
-                        """;
+        String givenNumbers = """
+                -1
+                1
+                2
+                3
+                4
+                5
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -55,16 +53,15 @@ public class UserNumberReceiverTests {
     @Test
     public void has_receiver_exactly_6_numbers_test3() {
         Set<Integer> expectedNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        String givenNumbers =
-                """
-                        100
-                        1
-                        2
-                        3
-                        4
-                        5
-                        6
-                        """;
+        String givenNumbers = """
+                100
+                1
+                2
+                3
+                4
+                5
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -75,16 +72,15 @@ public class UserNumberReceiverTests {
     @Test
     public void has_receiver_exactly_6_numbers_test4() {
         Set<Integer> expectedNumbers = Set.of(1, 2, 3, 4, 5, 6);
-        String givenNumbers =
-                """
-                        6
-                        1
-                        2
-                        3
-                        4
-                        5
-                        6
-                        """;
+        String givenNumbers = """
+                6
+                1
+                2
+                3
+                4
+                5
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -94,19 +90,18 @@ public class UserNumberReceiverTests {
 
     @Test
     public void has_receiver_exactly_6_numbers_test5() {
-        Set<Integer> expectedNumbers = Set.of( 1, 2, 3, 4, 5, 6);
-        String givenNumbers =
-                """
-                        6
-                        6
-                        6
-                        1
-                        2
-                        3
-                        4
-                        5
-                        6
-                        """;
+        Set<Integer> expectedNumbers = Set.of(1, 2, 3, 4, 5, 6);
+        String givenNumbers = """
+                6
+                6
+                6
+                1
+                2
+                3
+                4
+                5
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -118,19 +113,18 @@ public class UserNumberReceiverTests {
     @Test
     public void has_receiver_exactly_6_numbers_test6() {
         Set<Integer> expectedNumbers = Set.of(1, 22, 33, 44, 55, 99);
-        String givenNumbers =
-                """
-                        0
-                        1
-                        1
-                        22
-                        33
-                        33
-                        44
-                        55
-                        99
-                        99
-                        """;
+        String givenNumbers = """
+                0
+                1
+                1
+                22
+                33
+                33
+                44
+                55
+                99
+                99
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);

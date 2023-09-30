@@ -13,21 +13,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LottoGameVerficatorTests {
     @Test
-    public void should_result_text_be_correct_test1(){
+    public void should_result_text_be_correct_test1() {
         //given
-        String givenNumbers =
-                """
-                        0
-                        1
-                        1
-                        2
-                        3
-                        3
-                        4
-                        5
-                        6
-                        6
-                        """;
+        String givenNumbers = """
+                0
+                1
+                1
+                2
+                3
+                3
+                4
+                5
+                6
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -41,7 +40,7 @@ public class LottoGameVerficatorTests {
         resultSet.add(5);
         resultSet.add(6);
 
-        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
+        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet, resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
         //when
@@ -55,23 +54,23 @@ public class LottoGameVerficatorTests {
         assertThat(givenResult).isEqualTo(expectedResult);
 
     }
+
     @Test
-    public void should_result_text_be_correct_test2(){
+    public void should_result_text_be_correct_test2() {
         //given
-        String givenNumbers =
-                """
-                        0
-                        0
-                        11
-                        1
-                        22
-                        3
-                        3
-                        4
-                        4
-                        6
-                        6
-                        """;
+        String givenNumbers = """
+                0
+                0
+                11
+                1
+                22
+                3
+                3
+                4
+                4
+                6
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -86,7 +85,7 @@ public class LottoGameVerficatorTests {
         resultSet.add(99);
 
 
-        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
+        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet, resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
         //when
@@ -100,23 +99,23 @@ public class LottoGameVerficatorTests {
         assertThat(givenResult).isEqualTo(expectedResult);
 
     }
+
     @Test
-    public void should_result_text_be_correct_test3(){
+    public void should_result_text_be_correct_test3() {
         //given
-        String givenNumbers =
-                """
-                        0
-                        0
-                        94
-                        1
-                        96
-                        3
-                        3
-                        4
-                        4
-                        6
-                        6
-                        """;
+        String givenNumbers = """
+                0
+                0
+                94
+                1
+                96
+                3
+                3
+                4
+                4
+                6
+                6
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -131,7 +130,7 @@ public class LottoGameVerficatorTests {
         resultSet.add(99);
 
 
-        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
+        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet, resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
         //when
@@ -144,23 +143,23 @@ public class LottoGameVerficatorTests {
         //then
         assertThat(givenResult).isEqualTo(expectedResult);
     }
+
     @Test
-    public void should_result_text_be_correct_test4(){
+    public void should_result_text_be_correct_test4() {
         //given
-        String givenNumbers =
-                """
-                        0
-                        0
-                        94
-                        1
-                        96
-                        3
-                        3
-                        4
-                        4
-                        99
-                        99
-                        """;
+        String givenNumbers = """
+                0
+                0
+                94
+                1
+                96
+                3
+                3
+                4
+                4
+                99
+                99
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -175,7 +174,7 @@ public class LottoGameVerficatorTests {
         resultSet.add(99);
 
 
-        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
+        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet, resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
         //when
@@ -187,23 +186,23 @@ public class LottoGameVerficatorTests {
         //then
         assertThat(givenResult).isEqualTo(expectedResult);
     }
+
     @Test
-    public void should_result_text_be_correct_test5(){
+    public void should_result_text_be_correct_test5() {
         //given
-        String givenNumbers =
-                """
-                        0
-                        0
-                        94
-                        1
-                        96
-                        3
-                        3
-                        91
-                        91
-                        99
-                        99
-                        """;
+        String givenNumbers = """
+                0
+                0
+                94
+                1
+                96
+                3
+                3
+                91
+                91
+                99
+                99
+                """;
 
         BufferedReader reader = mockReaderIn(givenNumbers);
         UserNumberReceiver receiver = new UserNumberReceiver(reader);
@@ -218,7 +217,7 @@ public class LottoGameVerficatorTests {
         resultSet.add(99);
 
 
-        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet,resultSet);
+        LottoGameVerficator lottoGameVerficator = new LottoGameVerficator(userSet, resultSet);
 
         String givenResult = lottoGameVerficator.verifyUserResult();
         //when

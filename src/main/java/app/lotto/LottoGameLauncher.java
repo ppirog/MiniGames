@@ -16,7 +16,7 @@ public class LottoGameLauncher implements Game {
         LottoNumberGenerator generator = new LottoNumberGenerator();
         Set<Integer> randomSet = generator.generate6RandomNumbers();
 
-        LottoGameVerficator verficator = new LottoGameVerficator(userSet,randomSet);
+        LottoGameVerficator verficator = new LottoGameVerficator(userSet, randomSet);
         System.out.println(verficator.verifyUserResult());
 
     }

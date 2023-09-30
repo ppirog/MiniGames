@@ -2,7 +2,10 @@ package app.lotto;
 
 import lombok.Data;
 
-import java.util.*;
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
+
 @Data
 class LottoNumberGenerator {
 

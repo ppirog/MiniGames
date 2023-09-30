@@ -19,7 +19,7 @@ class LottoGameVerficator {
         int resultOfGame = 0;
 
         for (var num : userSet) {
-            if(resultSet.contains(num)){
+            if (resultSet.contains(num)) {
                 resultOfGame++;
             }
         }
@@ -27,19 +27,22 @@ class LottoGameVerficator {
                 printUserNumbers() + "\n" +
                 printLottoNumbers() + "\n";
     }
-    private String printResult(int num){
+
+    private String printResult(int num) {
         return RESULT + num;
     }
-    private String printUserNumbers(){
+
+    private String printUserNumbers() {
         StringBuilder builder = new StringBuilder(USER_NUMBERS);
-        for(var num : userSet){
+        for (var num : userSet) {
             builder.append(num).append(" ");
         }
         return builder.toString();
     }
-    private String printLottoNumbers(){
+
+    private String printLottoNumbers() {
         StringBuilder builder = new StringBuilder(LOTTO_NUMBERS);
-        for(var num : resultSet){
+        for (var num : resultSet) {
             builder.append(num).append(" ");
         }
         return builder.toString();
