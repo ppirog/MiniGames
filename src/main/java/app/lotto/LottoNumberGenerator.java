@@ -6,8 +6,8 @@ import java.util.*;
 @Data
 class LottoNumberGenerator {
 
-    public Set<Integer> generate6RandomNumbers(Random random) {
-
+    public Set<Integer> generate6RandomNumbers() {
+        Random random = new Random();
         Set<Integer> randomNumbers = new TreeSet<>();
 
         for (int i = 0; i < 6; ++i) {
