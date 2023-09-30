@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LottoGameVerficatorTests {
     @Test
-    public void should_result_text_be_correct_test1() {
+    public void should_result_text_be_correct_all_numbers_are_correct() {
         //given
         String givenNumbers = """
                 0
@@ -56,7 +56,7 @@ public class LottoGameVerficatorTests {
     }
 
     @Test
-    public void should_result_text_be_correct_test2() {
+    public void should_result_text_be_correct_zero_numbers_are_correct() {
         //given
         String givenNumbers = """
                 0
@@ -101,7 +101,7 @@ public class LottoGameVerficatorTests {
     }
 
     @Test
-    public void should_result_text_be_correct_test3() {
+    public void should_result_text_be_correct_two_numbers_are_correct() {
         //given
         String givenNumbers = """
                 0
@@ -145,7 +145,7 @@ public class LottoGameVerficatorTests {
     }
 
     @Test
-    public void should_result_text_be_correct_test4() {
+    public void should_result_text_be_correct_three_numbers_are_correct() {
         //given
         String givenNumbers = """
                 0
@@ -188,7 +188,7 @@ public class LottoGameVerficatorTests {
     }
 
     @Test
-    public void should_result_text_be_correct_test5() {
+    public void should_result_text_be_correct_four_numbers_are_correct() {
         //given
         String givenNumbers = """
                 0
